@@ -1,0 +1,60 @@
+/*Variables*/
+$color-fondo: black;
+$color-titulos: white;
+$fuente-principal: 'Hind', sans-serif;
+$fuente-secundaria:'Montserrat', sans-serif;
+
+// Animacion redes solo es un hover que cambia de color
+
+
+// Poner link al perfil de linkedin y prebunar por behance
+
+// Index
+.sidebar{
+    display: flex!important;
+    flex-direction:column !important;
+    height: 100%;
+    background-color: $color-fondo;
+    width: 300px;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.sidebarGeneral{
+    position: fixed;
+    z-index: 100;
+    width: 300px;
+    background:$color-fondo;
+    height: 100%;
+}
+
+.sectionPortfolio{
+    padding: 0px;
+    margin: 0px;
+    img{
+     width: 300px;
+     height: 280px;
+    }
+}
+
+.menuHamburguesa {
+    background-color: $color-fondo;
+}
+
+.imagenMenuHamburguesa {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+body{
+    background-color:$color-fondo;
+}
+.ubicacionPortfolio{
+    padding-left: 290px;
+}
+
+.titulosSecciones{
+    text-align: center;
+    margin: 10px;
+    color:$color-titulos;
+}

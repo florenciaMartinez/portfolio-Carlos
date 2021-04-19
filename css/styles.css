@@ -1,0 +1,40 @@
+/*Variables*/
+.sidebar {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100%;
+  background-color: black;
+  width: 300px;
+  justify-content: center;
+  align-items: flex-end; }
+
+.sidebarGeneral {
+  position: fixed;
+  z-index: 100;
+  width: 300px;
+  background: black;
+  height: 100%; }
+
+.sectionPortfolio {
+  padding: 0px;
+  margin: 0px; }
+  .sectionPortfolio img {
+    width: 300px;
+    height: 280px; }
+
+.menuHamburguesa {
+  background-color: black; }
+
+.imagenMenuHamburguesa {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff"); }
+
+body {
+  background-color: black; }
+
+.ubicacionPortfolio {
+  padding-left: 290px; }
+
+.titulosSecciones {
+  text-align: center;
+  margin: 10px;
+  color: white; }
