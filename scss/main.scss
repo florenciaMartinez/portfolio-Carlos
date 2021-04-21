@@ -3,6 +3,16 @@ $color-fondo: black;
 $color-titulos: white;
 $fuente-principal: 'Hind', sans-serif;
 $fuente-secundaria:'Montserrat', sans-serif;
+$color-textos:white;
+
+@mixin contacto {
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    position: absolute;
+}
 
 // Animacion redes solo es un hover que cambia de color
 
@@ -17,7 +27,7 @@ $fuente-secundaria:'Montserrat', sans-serif;
     background-color: $color-fondo;
     width: 300px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: inherit;
    
 }
 
@@ -57,4 +67,28 @@ body{
     text-align: center;
     margin: 10px;
     color:$color-titulos;
+}
+
+footer{
+    padding-left: 290px;
+  color: white;
+}
+.contacto{
+    @include contacto;
+}
+
+footer{
+    @include contacto;
+}
+.imagenSobreMi img{
+    width: 300px;
+    height: 300px;
+}
+
+.ubicacionInicio{
+    padding-left: 290px;
+}
+.imagenInicio img{
+    width: 300px;
+    height: 300px;
 }
