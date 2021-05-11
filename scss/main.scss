@@ -1,6 +1,8 @@
 /*Variables*/
 $color-fondo: black;
 $color-titulos: white;
+$color-verde: #8bbf44;
+$color-gris: #525353;
 $fuente-principal: 'Hind', sans-serif;
 $fuente-secundaria:'Montserrat', sans-serif;
 $color-textos:white;
@@ -28,13 +30,19 @@ $color-textos:white;
     width: 300px;
     justify-content: center;
     align-items: inherit;
+    
+    a{
+        color: $color-verde!important;
+       
+
+    }
    
 }
 
 .sidebarGeneral{
     position: fixed;
     z-index: 100;
-    width: 300px;
+    width: 400px;
     background:$color-fondo;
     height: 100%;
 }
@@ -65,7 +73,7 @@ body{
 
 .titulosSecciones{
     text-align: center;
-    margin: 10px;
+    margin: 25px;
     color:$color-titulos;
 }
 
@@ -86,9 +94,35 @@ footer{
 }
 
 .ubicacionInicio{
-    padding-left: 290px;
+    padding-left: 250px;
 }
 .imagenInicio img{
-    width: 300px;
-    height: 300px;
+    border-radius: 5px;
+}
+.colorTexto{
+    color:$color-textos;
+
+    p{
+        line-height: 1.8;
+        text-align: justify;
+        margin-top: 15px;
+        margin-right: 44px;
+        margin-left: 104px;
+    }
+}
+
+.footerPortfolio{
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    position: relative;
+}
+.botonCv{
+    display: flex;
+    justify-content: flex-end;
+    button a{
+        text-decoration: none;
+    }
 }

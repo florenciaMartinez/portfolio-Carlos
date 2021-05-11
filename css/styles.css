@@ -7,11 +7,13 @@
   width: 300px;
   justify-content: center;
   align-items: inherit; }
+  .sidebar a {
+    color: #8bbf44 !important; }
 
 .sidebarGeneral {
   position: fixed;
   z-index: 100;
-  width: 300px;
+  width: 400px;
   background: black;
   height: 100%; }
 
@@ -36,7 +38,7 @@ body {
 
 .titulosSecciones {
   text-align: center;
-  margin: 10px;
+  margin: 25px;
   color: white; }
 
 footer {
@@ -64,8 +66,30 @@ footer {
   height: 300px; }
 
 .ubicacionInicio {
-  padding-left: 290px; }
+  padding-left: 250px; }
 
 .imagenInicio img {
-  width: 300px;
-  height: 300px; }
+  border-radius: 5px; }
+
+.colorTexto {
+  color: white; }
+  .colorTexto p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 15px;
+    margin-right: 44px;
+    margin-left: 104px; }
+
+.footerPortfolio {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  position: relative; }
+
+.botonCv {
+  display: flex;
+  justify-content: flex-end; }
+  .botonCv button a {
+    text-decoration: none; }
