@@ -9,6 +9,10 @@
   align-items: inherit; }
   .sidebar a {
     color: #8bbf44 !important; }
+  .sidebar :hover {
+    color: white !important; }
+  .sidebar img {
+    width: 200px; }
 
 .sidebarGeneral {
   position: fixed;
@@ -16,13 +20,6 @@
   width: 400px;
   background: black;
   height: 100%; }
-
-.sectionPortfolio {
-  padding: 0px;
-  margin: 0px; }
-  .sectionPortfolio img {
-    width: 300px;
-    height: 280px; }
 
 .menuHamburguesa {
   background-color: black; }
@@ -33,33 +30,36 @@
 body {
   background-color: black; }
 
-.ubicacionPortfolio {
-  padding-left: 290px; }
+footer {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 100px;
+  padding-left: 360px;
+  color: white; }
+
+.linkedinFooter {
+  display: flex;
+  justify-content: center; }
+  .linkedinFooter i {
+    color: white; }
+  .linkedinFooter :hover {
+    color: #8bbf44; }
+
+.contactoFooter ul {
+  list-style-type: none; }
+  .contactoFooter ul a {
+    text-decoration: none;
+    color: white; }
+  .contactoFooter ul :hover {
+    color: #8bbf44; }
 
 .titulosSecciones {
   text-align: center;
   margin: 25px;
   color: white; }
-
-footer {
-  padding-left: 290px;
-  color: white; }
-
-.contacto {
-  color: white;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  position: absolute; }
-
-footer {
-  color: white;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  position: absolute; }
 
 .imagenSobreMi img {
   width: 300px;
@@ -80,16 +80,137 @@ footer {
     margin-right: 44px;
     margin-left: 104px; }
 
-.footerPortfolio {
+.botonCv {
+  display: flex;
+  justify-content: flex-end; }
+  .botonCv button {
+    background-color: #8bbf44;
+    border: none; }
+  .botonCv a {
+    text-decoration: none;
+    color: black; }
+  .botonCv :hover {
+    background-color: white; }
+
+.botonCvMin {
+  display: none; }
+
+.sectionPortfolio {
+  padding: 0px;
+  margin: 0px;
+  position: relative; }
+
+.imagenAnimacion img {
+  width: 300px;
+  height: 280px; }
+
+.ubicacionPortfolio {
+  padding-left: 350px; }
+
+.textoImagenContenido {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  color: white;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .textoImagenContenido p {
+    padding: 30px;
+    font-weight: bold; }
+  .textoImagenContenido:hover {
+    opacity: 0.8; }
+
+.contacto {
   color: white;
   width: 100%;
   bottom: 0;
   left: 0;
   z-index: 100;
-  position: relative; }
+  margin-left: 80px; }
 
-.botonCv {
-  display: flex;
-  justify-content: flex-end; }
-  .botonCv button a {
-    text-decoration: none; }
+.formContacto iframe {
+  width: 800px;
+  height: 950px; }
+
+.tapaCpontacto {
+  background-color: red; }
+
+.wathsapp a {
+  text-decoration: none;
+  color: #8bbf44; }
+  .wathsapp a :hover {
+    color: white; }
+
+.email {
+  margin-left: 64px; }
+  .email a {
+    text-decoration: none;
+    color: #8bbf44; }
+  .email :hover {
+    color: white; }
+
+@media (max-width: 575.98px) {
+  .sidebar {
+    display: block;
+    width: 340px; }
+  .sidebarGeneral {
+    position: inherit;
+    z-index: 0;
+    background: black;
+    height: 100%;
+    display: block;
+    width: 20px; }
+  .ubicacionInicio {
+    padding-left: 0; }
+  .imagenInicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+  .colorTexto p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 50px; }
+  .botonCv {
+    display: none; }
+  .botonCvMin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+    .botonCvMin button {
+      background-color: #8bbf44;
+      border: none;
+      width: 265px; }
+    .botonCvMin a {
+      text-decoration: none;
+      color: black; }
+  footer {
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    padding-left: 0px;
+    color: white; }
+  .contactoFooter {
+    display: flex;
+    justify-content: center; }
+    .contactoFooter ul {
+      padding: 0px; }
+  .derechosFooter {
+    display: flex;
+    justify-content: start;
+    margin-left: 44px; }
+  .menuHamburguesa {
+    margin-left: 22px; }
+  .linkedinFooter {
+    display: flex;
+    justify-content: start;
+    margin-left: 48px; } }
