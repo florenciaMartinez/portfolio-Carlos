@@ -30,26 +30,66 @@
       
       </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg sidebarGeneral">
-          <div class="container-fluid">
-            <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-              <div class="navbar-nav sidebar">
-                <a class="navbar-brand" href="index.html"> <img src="imagenes/logoBarraCentra.png" alt="logo"></a>
-                <a class="nav-link active" aria-current="page" href="index.html">Sobre Mi</a>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar navbar-expand-lg sidebarGeneral">
+      <div class="container-fluid">
+        <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav sidebar">
+            <ul>
+              <li><a class="navbar-brand" href="index.html"> <img src="imagenes/logoBarraCentra.png" alt="logo"></a></li>
+            <li><a class="nav-link active" aria-current="page" href="index.html">Sobre Mi</a></li>
+            
+            <li class="dropdown">
+              <button class=" dropdown-toggle botonPortfolio" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Portfolio
+              </button>
+              <ul class="dropdown-menu estiloDM" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="web.html">Web</a></li>
+                <li><a class="dropdown-item" href="pop.html">POP</a></li>
+                <li><a class="dropdown-item" href="imgCorp.html">Imagen Corporativa</a></li>
+                <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
 
+              </ul>
+            </li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            
+          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+      <main>
+        <h2 class="titulosSecciones">Web</h2>
+      
+      <section class="centrartCat">
+        <h4 class="textoWeb">Coca-Cola Andina </h4>
+        <div class="textoWeb">Actualización de la identidad corporativa de Embotelladora Andina, se realizo un refresh del logotipo pensando en la unidad visual de todas sus operaciones a nivel Latinoamérica.</div>
+        <img src="imagenes/cocaAndina.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Kukaplay</h4>
+        <div class="textoWeb">Creación y desarrollo de la marca Kukaplay, empresa dedicada a la venta de Juguetes. Además de la asesoría, diseño de Stand y muebles durante los años posteriores a la creación de la marca.</div>
+        <img src="imagenes/kuka.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Catenaria Construcciones</h4>
+        <div class="textoWeb">Creación de la marca corporativa de la constructora Catenaria.</div>
+        <img src="imagenes/catenaria.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Nearway</h4>
+        <div class="textoWeb">Desarrollo del logotipo y la línea gráfica de CAM (Control de Asistencia móvil).</div>
+        <img src="imagenes/nearCom.png" alt="">
+      </section>
+
+    </main>
 
       <footer>
         <div class="container">

@@ -30,25 +30,67 @@
       
       </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg sidebarGeneral">
-          <div class="container-fluid">
-            <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-              <div class="navbar-nav sidebar">
-                <a class="navbar-brand" href="index.html"> <img src="imagenes/logoBarraCentra.png" alt="logo"></a>
-                <a class="nav-link active" aria-current="page" href="index.html">Sobre Mi</a>
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg sidebarGeneral">
+      <div class="container-fluid">
+        <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon imagenMenuHamburguesa"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav sidebar">
+            <ul>
+              <li><a class="navbar-brand" href="index.html"> <img src="imagenes/logoBarraCentra.png" alt="logo"></a></li>
+            <li><a class="nav-link active" aria-current="page" href="index.html">Sobre Mi</a></li>
+            
+            <li class="dropdown">
+              <button class=" dropdown-toggle botonPortfolio" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Portfolio
+              </button>
+              <ul class="dropdown-menu estiloDM" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="web.html">Web</a></li>
+                <li><a class="dropdown-item" href="pop.html">POP</a></li>
+                <li><a class="dropdown-item" href="imgCorp.html">Imagen Corporativa</a></li>
+                <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
+
+              </ul>
+            </li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            
+          </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </div>
+    </nav>
+  </header>
+      <main>
+        <h2 class="titulosSecciones">Web</h2>
+      
+      <section class="centrartCat">
+        <h4 class="textoWeb">Nearway S.A</h4>
+        <div class="textoWeb">Modificación del sitio Web de la consultora Nearway, haciéndola mas simple y directa para el usuario  final.</div>
+        <img src="imagenes/webNew.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Nearway S.A</h4>
+        <div class="textoWeb">Desarrollo Grafico de la Pagina WEB para la APP de la Empresa Nerway S.A llamada CAM (Control de Asistencia Movi).</div>
+        <img src="imagenes/webN2.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Coca-Cola Andina Chile</h4>
+        <div class="textoWeb">Pagina Litros de Felicidad, estuve a cargo del desarrollo gráfico de la página junto a la agencia Bloque Digital el cual realizó la programación de esta, página realizada para la empresa Coca-Cola Andina.</div>
+        <img src="imagenes/litrosCoca.png" alt="">
+      </section>
+      <section class="centrartCat">
+        <h4 class="textoWeb">Coderhouse</h4>
+        <div class="textoWeb">APP Recicla 360, es el desarrollo de la grafica y el prototipo funcional para una APP enfocada en el reciclaje.</div>
+        <img src="imagenes/coder.png" alt="">
+      </section>
+
+    </main>
+
 
 
       <footer>

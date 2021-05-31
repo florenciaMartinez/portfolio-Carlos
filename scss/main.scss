@@ -7,6 +7,8 @@ $fuente-principal: 'Hind', sans-serif;
 $fuente-secundaria:'Montserrat', sans-serif;
 $color-textos:white;
 
+
+
 @mixin contacto {
     color: white;
     width: 100%;
@@ -30,9 +32,17 @@ $color-textos:white;
     width: 300px;
     justify-content: center;
     align-items: inherit;
+    ul{
+        list-style: none;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+    }
     
     a{
         color: $color-verde!important;
+        text-decoration: none;
 
     }
     :hover{
@@ -43,6 +53,30 @@ $color-textos:white;
     }
    
 }
+.botonPortfolio{
+    background-color: black;
+    color: $color-verde;
+    border: none;  
+}
+.botonPortfolio:hover{
+    color: white;
+    background:none!important;
+    border: none!important;
+}
+.botonPortfolio:active{
+    color: white;
+    background:none!important;
+    border: none!important;
+}
+
+.estiloDM{
+    background-color: black;
+    li a:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
 
 .sidebarGeneral{
     position: fixed;
@@ -141,13 +175,15 @@ footer{
 }
 //portfolio
  .sectionPortfolio{
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
     position: relative;
+    display: flex;
+    justify-content: center;
  }
  .imagenAnimacion img{
-     width: 300px;
-     height: 280px;
+     width: 380px;
+     height: 380px;
 }
      
 
@@ -156,30 +192,52 @@ footer{
     padding-left: 350px;
 }
 .textoImagenContenido {
+   
     position: absolute;
     top: 0;
-    width: 300px;
-    height:300px;
-    color:white;
-    // background: rgba(0, 0, 0, 0.7);
-    background-color: red;
+    width: 400px;
+    height:400px;
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    p {
+
+    a{
+        text-decoration: none;
+        color:white;
         padding: 30px;
         font-weight: bold;
     }
+    
     &:hover {
         opacity: 0.8;
     }
 }
+.categoriasMinSize{
+    display: none;
+}
 
+//Ilustracion
+.centrartCat img{
+    margin-left: 400px;
+    width: 800px;
+}
+.textoIlus{
+    color: white;
+    margin-left:444px ;
+    margin-right: 170px;
+}
+//web
 
+.textoWeb{
+    color: white;
+    margin-left: 444px;
+    margin-right: 200px;
+
+}
 // Contacto
 .contacto{
     @include contacto;
@@ -190,9 +248,11 @@ footer{
 .formContacto iframe{
     width: 800px;
     height: 950px;
+    position: relative;
 }
 .tapaCpontacto{
     background-color:red;
+    float: right;
 }
 
 .wathsapp a{
@@ -215,6 +275,16 @@ footer{
     }
 }
 
+.ordenContacto{
+        color:$color-textos;
+        p{
+            line-height: 1.8;
+            text-align: justify;
+            margin-top: 15px;
+            margin-right: 44px;
+            margin-left: 64px;
+        }
+}
 
 //media celular
 
@@ -222,6 +292,7 @@ footer{
     .sidebar{
         display: block;
         width: 340px;
+        margin-left: 15px;
     }
     .sidebarGeneral{
         position: inherit;
@@ -273,8 +344,7 @@ footer{
         color: white;
     }
     .contactoFooter {
-        display: flex;
-        justify-content: center;
+        margin-left: 45px;
         ul{
           padding: 0px;  
         }
@@ -293,8 +363,61 @@ footer{
         justify-content: start;
         margin-left: 48px;
     }
-    
+
+    //contacto
+    .ubicacionPortfolio{
+        padding: 0px;
+    }
+    .formContacto iframe{
+        width: 415px;
+    }
+    .ordenContacto p {
+        text-align: inherit;
+    }
+    //portfolio
+    .categoriasMinSize{
+        display: block;
+        text-align: center;
+        margin: 30px;
+        font-weight: bold;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .sectionPortfolio{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    }
+    .imagenAnimacion img{
+        width: 300px;
+        height: 300px;
+   }
+   //web
+   .textoWeb {
+    color: white;
+    margin-left: 27px;
+    margin-right: 27px;
+   }
+
+    .centrartCat img {
+        margin-left: 22px;
+        width: 380px;
+    }
+    //ilustracion 
+    .textoIlus{
+        color: white;
+        margin-left: 27px;
+        margin-right: 27px;
+    }
 }
+    
+
 
 
 

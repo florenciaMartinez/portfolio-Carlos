@@ -1,0 +1,463 @@
+/*Variables*/
+.sidebar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  height: 100%;
+  background-color: black;
+  width: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #8bbf44 !important;
+  text-decoration: none;
+}
+
+.sidebar :hover {
+  color: white !important;
+}
+
+.sidebar img {
+  width: 200px;
+}
+
+.botonPortfolio {
+  background-color: black;
+  color: #8bbf44;
+  border: none;
+}
+
+.botonPortfolio:hover {
+  color: white;
+  background: none !important;
+  border: none !important;
+}
+
+.botonPortfolio:active {
+  color: white;
+  background: none !important;
+  border: none !important;
+}
+
+.estiloDM {
+  background-color: black;
+}
+
+.estiloDM li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.sidebarGeneral {
+  position: fixed;
+  z-index: 100;
+  width: 400px;
+  background: black;
+  height: 100%;
+}
+
+.menuHamburguesa {
+  background-color: black;
+}
+
+.imagenMenuHamburguesa {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+}
+
+body {
+  background-color: black;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 100px;
+  padding-left: 360px;
+  color: white;
+}
+
+.linkedinFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.linkedinFooter i {
+  color: white;
+}
+
+.linkedinFooter :hover {
+  color: #8bbf44;
+}
+
+.contactoFooter ul {
+  list-style-type: none;
+}
+
+.contactoFooter ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactoFooter ul :hover {
+  color: #8bbf44;
+}
+
+.titulosSecciones {
+  text-align: center;
+  margin: 25px;
+  color: white;
+}
+
+.imagenSobreMi img {
+  width: 300px;
+  height: 300px;
+}
+
+.ubicacionInicio {
+  padding-left: 250px;
+}
+
+.imagenInicio img {
+  border-radius: 5px;
+}
+
+.colorTexto {
+  color: white;
+}
+
+.colorTexto p {
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 15px;
+  margin-right: 44px;
+  margin-left: 104px;
+}
+
+.botonCv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.botonCv button {
+  background-color: #8bbf44;
+  border: none;
+}
+
+.botonCv a {
+  text-decoration: none;
+  color: black;
+}
+
+.botonCv :hover {
+  background-color: white;
+}
+
+.botonCvMin {
+  display: none;
+}
+
+.sectionPortfolio {
+  padding: 10px;
+  margin: 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagenAnimacion img {
+  width: 380px;
+  height: 380px;
+}
+
+.ubicacionPortfolio {
+  padding-left: 350px;
+}
+
+.textoImagenContenido {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.textoImagenContenido a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.textoImagenContenido:hover {
+  opacity: 0.8;
+}
+
+.categoriasMinSize {
+  display: none;
+}
+
+.centrartCat img {
+  margin-left: 400px;
+  width: 800px;
+}
+
+.textoIlus {
+  color: white;
+  margin-left: 444px;
+  margin-right: 170px;
+}
+
+.textoWeb {
+  color: white;
+  margin-left: 444px;
+  margin-right: 200px;
+}
+
+.contacto {
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  margin-left: 80px;
+}
+
+.formContacto iframe {
+  width: 800px;
+  height: 950px;
+  position: relative;
+}
+
+.tapaCpontacto {
+  background-color: red;
+  float: right;
+}
+
+.wathsapp a {
+  text-decoration: none;
+  color: #8bbf44;
+}
+
+.wathsapp a :hover {
+  color: white;
+}
+
+.email {
+  margin-left: 64px;
+}
+
+.email a {
+  text-decoration: none;
+  color: #8bbf44;
+}
+
+.email :hover {
+  color: white;
+}
+
+.ordenContacto {
+  color: white;
+}
+
+.ordenContacto p {
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 15px;
+  margin-right: 44px;
+  margin-left: 64px;
+}
+
+@media (max-width: 575.98px) {
+  .sidebar {
+    display: block;
+    width: 340px;
+    margin-left: 15px;
+  }
+  .sidebarGeneral {
+    position: inherit;
+    z-index: 0;
+    background: black;
+    height: 100%;
+    display: block;
+    width: 20px;
+  }
+  .ubicacionInicio {
+    padding-left: 0;
+  }
+  .imagenInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .colorTexto p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .botonCv {
+    display: none;
+  }
+  .botonCvMin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  .botonCvMin button {
+    background-color: #8bbf44;
+    border: none;
+    width: 265px;
+  }
+  .botonCvMin a {
+    text-decoration: none;
+    color: black;
+  }
+  footer {
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+    padding-left: 0px;
+    color: white;
+  }
+  .contactoFooter {
+    margin-left: 45px;
+  }
+  .contactoFooter ul {
+    padding: 0px;
+  }
+  .derechosFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 44px;
+  }
+  .menuHamburguesa {
+    margin-left: 22px;
+  }
+  .linkedinFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 48px;
+  }
+  .ubicacionPortfolio {
+    padding: 0px;
+  }
+  .formContacto iframe {
+    width: 415px;
+  }
+  .ordenContacto p {
+    text-align: inherit;
+  }
+  .categoriasMinSize {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+  }
+  .categoriasMinSize a {
+    color: white;
+    text-decoration: none;
+  }
+  .sectionPortfolio {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagenAnimacion img {
+    width: 300px;
+    height: 300px;
+  }
+  .textoWeb {
+    color: white;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  .centrartCat img {
+    margin-left: 22px;
+    width: 380px;
+  }
+  .textoIlus {
+    color: white;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
