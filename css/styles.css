@@ -205,7 +205,8 @@ footer {
     color: white; }
 
 .ordenContacto {
-  color: white; }
+  color: white;
+  margin-bottom: 150px; }
   .ordenContacto p {
     line-height: 1.8;
     text-align: justify;
@@ -278,6 +279,9 @@ footer {
     width: 415px; }
   .ordenContacto p {
     text-align: inherit; }
+  .ordenContacto {
+    color: white;
+    margin-bottom: 160px; }
   .categoriasMinSize {
     display: block;
     text-align: center;
