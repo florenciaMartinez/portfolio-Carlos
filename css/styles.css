@@ -44,7 +44,7 @@
 .sidebarGeneral {
   position: fixed;
   z-index: 100;
-  width: 400px;
+  width: 320px;
   background: black;
   height: 100%; }
 
@@ -190,10 +190,12 @@ footer {
   background-color: red;
   float: right; }
 
-.wathsapp a {
-  text-decoration: none;
-  color: #8bbf44; }
-  .wathsapp a :hover {
+.wathsapp {
+  margin: 0; }
+  .wathsapp a {
+    text-decoration: none;
+    color: #8bbf44; }
+  .wathsapp :hover {
     color: white; }
 
 .email {
@@ -281,7 +283,7 @@ footer {
     text-align: inherit; }
   .ordenContacto {
     color: white;
-    margin-bottom: 160px; }
+    margin-bottom: 190px; }
   .categoriasMinSize {
     display: block;
     text-align: center;
@@ -311,3 +313,48 @@ footer {
     color: white;
     margin-left: 27px;
     margin-right: 27px; } }
+
+/*medida Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .sidebar {
+    display: block;
+    width: 340px;
+    margin-left: 15px; }
+    .sidebar ul {
+      margin-left: 330px; }
+  .sidebarGeneral {
+    position: inherit;
+    z-index: 0;
+    background: black;
+    height: 100%;
+    display: block;
+    width: 20px; }
+  .ubicacionInicio {
+    padding-left: 0; }
+  footer {
+    padding-left: 0px;
+    margin-top: 150px; }
+  .colorTexto p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 15px;
+    margin-right: 44px;
+    margin-left: 26px; }
+  .imagenInicio img {
+    border-radius: 5px;
+    width: 230px; }
+  .ubicacionPortfolio {
+    padding-left: 0px; }
+  .imagenAnimacion img {
+    width: 340px; }
+  .textoWeb {
+    color: white;
+    margin-left: 25px;
+    margin-right: 14px; }
+  .centrartCat img {
+    margin-left: 0px;
+    width: 760px; }
+  .textoIlus {
+    color: white;
+    margin-left: 25px;
+    margin-right: 9px; } }

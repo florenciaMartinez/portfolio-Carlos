@@ -81,7 +81,7 @@ $color-textos:white;
 .sidebarGeneral{
     position: fixed;
     z-index: 100;
-    width: 400px;
+    width: 320px;
     background:$color-fondo;
     height: 100%;
 }
@@ -257,9 +257,12 @@ footer{
     float: right;
 }
 
-.wathsapp a{
+.wathsapp{
+    margin: 0;
+    a{
     text-decoration: none;
     color: $color-verde;
+    }
     :hover {
         color: white;
     }
@@ -280,6 +283,7 @@ footer{
 .ordenContacto{
         color:$color-textos;
         margin-bottom: 150px;
+        
         p{
             line-height: 1.8;
             text-align: justify;
@@ -380,7 +384,7 @@ footer{
 
     .ordenContacto {
         color: white;
-        margin-bottom: 160px;
+        margin-bottom: 190px;
     }
 
     //portfolio
@@ -424,9 +428,75 @@ footer{
         margin-left: 27px;
         margin-right: 27px;
     }
-
-  
 }
+
+/*medida Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px){
+
+    .sidebar{
+        display: block;
+        width: 340px;
+        margin-left: 15px;
+        ul{
+            margin-left: 330px;
+        }
+    }
+    .sidebarGeneral{
+        position: inherit;
+        z-index: 0;
+        background:$color-fondo;
+        height: 100%;
+        display: block;
+        width: 20px;
+    }
+    .ubicacionInicio {
+        padding-left: 0;
+    }
+    footer{
+        padding-left: 0px;
+        margin-top: 150px;
+    }
+    .colorTexto p {
+        line-height: 1.8;
+        text-align: justify;
+        margin-top: 15px;
+        margin-right: 44px;
+        margin-left: 26px;
+    }
+    .imagenInicio img {
+        border-radius: 5px;
+        width: 230px;
+    }
+    //portafolio
+    .ubicacionPortfolio {
+        padding-left: 0px;
+    }
+
+   
+    .imagenAnimacion img{
+        width: 340px;
+    }
+
+     //web
+    .textoWeb {
+        color: white;
+        margin-left: 25px;
+        margin-right: 14px;
+    }
+    .centrartCat img {
+        margin-left: 0px; 
+        width: 760px;
+    }
+    //pop
+    .textoIlus {
+        color: white;
+        margin-left: 25px;
+        margin-right: 9px;
+    }
+
+} 
+
+
     
 
 
